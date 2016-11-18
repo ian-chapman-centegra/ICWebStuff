@@ -81,15 +81,31 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CreateStreams.aspx" />
     <Content Include="default.aspx" />
+    <Content Include="FixFiles\default.aspx" />
     <Content Include="RubyWriter\default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateStreams.aspx.designer.vb">
+      <DependentUpon>CreateStreams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateStreams.aspx.vb">
+      <DependentUpon>CreateStreams.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="default.aspx.designer.vb">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FixFiles\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FixFiles\default.aspx.vb">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
